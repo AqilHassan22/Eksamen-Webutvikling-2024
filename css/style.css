@@ -90,12 +90,8 @@
     justify-content: space-between;
 }
 
-span.fa-star.checked{
-    color: rgb(255, 255, 255);
-}
-
-.fa-star{
-    color: rgb(0, 0, 0);
+.fa-regular.fa-star{
+    color: white;
 }
 
 h2{
@@ -120,13 +116,49 @@ h2{
 .popular-categories{
     margin-top: 20px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    color: black;
 }
 
-.category1{
+.cat1, .cat2, .cat3, .cat4, .cat5{
     background-image: url(https://picsum.photos/id/36/1200/600);
     text-align: center;
-    color: white;
+    color: black;
+    border-radius: 25px;
+    height: 20vh;
+    margin-bottom: 10px;
+}
 
+.reviews{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.reviews h4{
+    width: 100%;
+}
+
+.review-card{
+    max-width: 289px;
+    width: 100%;
+    box-shadow: 13px 9px 20px 0px #efefef;
+    border-radius: 4px;
+    padding: 1rem;
+}
+
+.review-card img{
+    width: 100%;
+    max-width: 150px;
+}
+
+.scroll-container{
+    display: flex;
+    gap: 1rem;
+    overflow: scroll;
 }
 
 #grid-container footer{
@@ -140,9 +172,8 @@ h2{
 #footer2{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    margin-left: -133px;
-    padding: 10px;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .fa-solid.fa-location-dot, .fa-solid.fa-phone, .fa-solid.fa-envelope, .fa-solid.fa-clock {
