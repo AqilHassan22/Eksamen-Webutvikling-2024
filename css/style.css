@@ -201,7 +201,7 @@ nav#breadcrumbs-check{
     grid-template-rows: repeat(4, auto);
 }
 
-#product-grid{
+#productcheck-grid{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, auto);
