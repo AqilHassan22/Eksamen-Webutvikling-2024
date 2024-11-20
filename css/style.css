@@ -49,12 +49,12 @@
 }
 
 .front-banner{
-    background-image: url(https://picsum.photos/id/36/1200/600);
+    width: 100%;
     background-size: cover;
     padding: 0;
     border-radius: 25px;
     margin-top: 220px;
-    height: 50vh;
+    height: 100%;
 }
 
 .buttons{
@@ -196,6 +196,12 @@ nav#breadcrumbs-check{
 }
 
 #checkout-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+}
+
+#product-grid{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, auto);
