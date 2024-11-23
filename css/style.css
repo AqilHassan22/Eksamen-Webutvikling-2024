@@ -40,6 +40,7 @@
 #grid-container main{
     grid-column: 1/2;
     grid-row: 3/4;
+    margin-top: 200px;
 }
 
 #mansory-grid{
@@ -64,7 +65,6 @@
 }
 
 .scroll-banner figure{
-    flex: 0 0 auto;
     scroll-snap-align: center;
     margin: 0;
     padding: 0;
@@ -232,11 +232,32 @@ nav#breadcrumbs-check{
     grid-template-rows: repeat(4, auto);
 }
 
-#productcheck-grid{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, auto);
+.breadcrumb-bar{
+    display: flex;
+    list-style: none;
     gap: 1rem;
+}
+
+#productcheck-grid{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 2rem;
+}
+
+.gallery-group{
+    list-style: none;
+}
+
+.product-details{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
 }
 
 #kasse{
@@ -263,4 +284,8 @@ nav#breadcrumbs-check{
     align-content: flex-start;
     gap: 1.2rem;
     padding: 0;
+}
+
+@media only screen and (min-width: 800px){
+
 }
