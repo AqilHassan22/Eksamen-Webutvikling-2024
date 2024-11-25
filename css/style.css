@@ -2,13 +2,6 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-#border-frame{
-    width: 90%;
-    margin: 20px auto;
-    padding: 20px;
-    border: 5px solid #ccc;
-}
-
 #grid-container{
     display: grid;
     grid-template-columns: 1fr;
@@ -47,7 +40,7 @@
 #grid-container main{
     grid-column: 1/2;
     grid-row: 3/4;
-    margin-top: 15px;
+    margin-top: 200px;
 }
 
 #mansory-grid{
@@ -138,7 +131,7 @@ h2{
     margin-top: 250px;
 }
 
-.btn{
+#product-buttons.btn{
     display: inline-block;
     color: black;
     background-color: white;
@@ -255,7 +248,11 @@ h2{
 }
 
 nav#breadcrumbs-check{
-    margin-top: 1rem;
+    margin-top: 1rem; 
+}
+
+nav#breadcrumbs-check a{
+    text-decoration: none;
 }
 
 #breadcrumbs-check ul{
@@ -310,8 +307,71 @@ nav#breadcrumbs-check{
 #kasse{
     display: flex;
     justify-content: center;
+    margin-top: 0.5rem;
+}
+
+.shopping-bag, .personal-details, .delivery, .payment, .finalize-payment{
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.personal-details input{
+    width: 100%;
+}
+
+a#save-btn.btn{
+    display: flex;
+    justify-content: center;
+    border-radius: 0px;
+    color: white;
+    background-color: black;
+    max-width: 100%;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+#cancel{
+    display: flex;
+    justify-content: center;
     margin-top: -1rem;
-    margin-bottom: -2rem;
+}
+
+a#submit-payment.btn{
+    display: flex;
+    justify-content: center;
+    border-radius: 0px;
+    color: white;
+    background-color: black;
+    max-width: 100%;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.delivery form{
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.payment input{
+    width: 100%;
+}
+
+.finalize-payment{
+    text-align: center;
+}
+
+.finalize-payment p b{
+    font-size: 30px;
+}
+
+.shopping-bag{
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 3/4;
 }
 
 .shopping-bag img{
@@ -319,10 +379,50 @@ nav#breadcrumbs-check{
     height: 40vh;
 }
 
-.shopping-bag article ul{
+.personal-details{
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+
+.delivery{
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 5/6;
+}
+
+.payment{
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 6/7;
+}
+
+.finalize-payment{
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 7/8;
+}
+
+.clothing-details{
     display: flex;
     flex-direction: column;
     list-style: none;
+    margin-left: -30px;
+}
+
+.shopping-details{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 0.5rem;
+    margin-left: -30px;
+}
+
+.shopping-icons{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 1rem;
     margin-left: -30px;
 }
 
