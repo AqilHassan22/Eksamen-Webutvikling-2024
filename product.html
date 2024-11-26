@@ -11,36 +11,36 @@
     <title>Eksamen</title>
 </head>
 <body>
-        <div id="grid-container">
-            <header>
-                <form>
-                    <label>
-                        <input type="search" placeholder="søk her" id="search">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </label>
-                </form>
-                <nav>
-                    <ul>
-                        <li>Hjem</li>
-                        <li>Produkter</li>
-                        <br>
-                        <li><b>Logo</b></li>
-                        <br>
-                        <li>Kategorier</li>
-                        <li>Kontakt oss</li>
-                    </ul>
-                </nav>
-                <ul class="icons">
-                    <li>
-                        <i class="fa-regular fa-user"></i>
-                    </li>
-                    <li>
-                        <i class="fa-regular fa-heart"></i>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-cart-shopping"></i>
-                    </li>
+    <div id="grid-container">
+        <header>
+            <form>
+                <label>
+                    <input type="search" placeholder="søk her" id="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </label>
+            </form>
+            <nav>
+                <ul>
+                    <li>Hjem</li>
+                    <li>Produkter</li>
+                    <br>
+                    <li><b>Logo</b></li>
+                    <br>
+                    <li>Kategorier</li>
+                    <li>Kontakt oss</li>
                 </ul>
+            </nav>
+            <ul class="icons">
+                <li>
+                    <i class="fa-regular fa-user"></i>
+                </li>
+                <li>
+                    <i class="fa-regular fa-heart"></i>
+                </li>
+                <li>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </li>
+            </ul>
             </header>
             <main>
                 <div id="product-grid">
@@ -53,47 +53,169 @@
                     </nav>
                     <section class="description">
                         <div id="productcheck-grid">
-                            <section class="product-gallery">
-                                <ul class="gallery-group">
-                                    <li><img id="img2" src="https://picsum.photos/id/1/200/300" alt="produktbilde1"></li>
-                                    <li><img id="img3" src="https://picsum.photos/id/1/200/300" alt="produktbilde1"></li>
-                                    <li><img id="img4" src="https://picsum.photos/id/1/200/300" alt="produktbilde1"></li>
-                                </ul>
+                            <section class="left-product-gallery">
                                 <img id="img1" src="https://picsum.photos/id/1/200/300" alt="produktbilde1">
+                                <img id="img2" src="https://picsum.photos/id/1/200/300" alt="produktbilde2">
+                                <img id="img3" src="https://picsum.photos/id/1/200/300" alt="produktbilde3">
                             </section>
+                                <img id="img4" src="https://picsum.photos/id/1/200/300" alt="produktbilde4">
                         </div>
-                        
-                            <section class="product-description">
-                                <ul class="product-details">
-                                    <li>Produkt</li>
-                                    <li>Merkenavn</li>
-                                    <li>5 195 inkl. mva.</li>
-                                    <li>Farge <b>Beige</b></li>
-                                </ul>
-                                <div class="dropdown-menu">
-                                </div>
-                                <p><button>Add to cart</button></p>
-                                <button><i class="fa-regular fa-heart"></i></button>
-                                <button type="button" class="collapsible"><b>Materiale og vedlikehold</b></button>
-                                <details class="content">
-                                    <ul>
-                                        <li>Overmateriale: 95% viskoe, 5% estalan</li>
-                                        <li>Materiale ermer: 100% polyester</li>
-                                        <li>Materiale: Jersey</li>
-                                    </ul>
-                                </details>
-                                <button type="button" class="collapsible"><b>Produktdetaljer</b></button>
-                                <details class="content">
-                                    <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
-                                </details>
-                                <button type="button" class="collapsible"><b>Størrelsetabell</b></button>
-                                    <p></p>
-                                    
-                                <details class="content">
-                                </details>
-                            </section>
-
-                    
+                    </section>
+                    <section class="product-description">
+                        <ul class="product-details">
+                            <li>Produkt</li>
+                            <li>Merkenavn</li>
+                            <li>5 195 inkl. mva.</li>
+                            <li>Farge<b>Beige</b></li>
+                        </ul>
+                        <label for="select-size">Velg størrelse</label>
+                        <select id="select-size" name="select-size">
+                            <option value="XS">XS</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        <section class="product-buttons">
+                            <ul>
+                                <li><a href="#" class="btn" id="add-to-cart">Add to cart</a></li>
+                                <li><a href="#" class="btn" id="wishlist"><i class="fa-regular fa-heart"></i></a></li>
+                            </ul>
+                        <details class="material">
+                            <summary>Materiale og vedlikehold</summary>
+                            <ul>
+                                <li>Overmateriale: 95% viskoe, 5% estalan</li>
+                                <li>Materiale ermer: 100% polyester</li>
+                                <li>Materiale: Jersey</li>
+                            </ul>
+                        </details>
+                        <details class="detail-collapsible">
+                            <summary>Produktdetaljer</summary>
+                            <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+                        </details>
+                        <details class="size-table">
+                            <summary>Størrelsestabell</summary>
+                            <p>Sjekk ut hvordan din vanlige størrelse konverterer til andre størrelser i vår størrelsesguide. Husk at dette kun er en generell guide og at størrelsesene kan varierere i forhold til merke og modell.</p>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>EU</th>
+                                        <th>INT</th>
+                                        <th>BRYSTVIDDE</th>
+                                        <th>LIVVIDDE</th>
+                                        <th>HOFTEMÅL</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>32</td>
+                                        <td>XXS</td>
+                                        <td>76</td>
+                                        <td>63</td>
+                                        <td>85</td>
+                                    </tr>
+                                    <tr>
+                                        <td>34</td>
+                                        <td>XS</td>
+                                        <td>80</td>
+                                        <td>66</td>
+                                        <td>69</td>
+                                    </tr>
+                                    <tr>
+                                        <td>36</td>
+                                        <td>S</td>
+                                        <td>84</td>
+                                        <td>69</td>
+                                        <td>93</td>
+                                    </tr>
+                                    <tr>
+                                        <td>38</td>
+                                        <td>M</td>
+                                        <td>88</td>
+                                        <td>72</td>
+                                        <td>97</td>
+                                    </tr>
+                                    <tr>
+                                        <td>40</td>
+                                        <td>L</td>
+                                        <td>92</td>
+                                        <td>76</td>
+                                        <td>100</td>
+                                    </tr>
+                                    <tr>
+                                        <td>42</td>
+                                        <td>XL</td>
+                                        <td>96</td>
+                                        <td>80</td>
+                                        <td>103</td>
+                                    </tr>
+                                    <tr>
+                                        <td>44</td>
+                                        <td>XXL</td>
+                                        <td>100</td>
+                                        <td>85</td>
+                                        <td>106</td>
+                                    </tr>
+                                    <tr>
+                                        <td>46</td>
+                                        <td>3XL</td>
+                                        <td>105</td>
+                                        <td>90</td>
+                                        <td>109</td>
+                                    </tr>
+                                    <tr>
+                                        <td>48</td>
+                                        <td>4XL</td>
+                                        <td>110</td>
+                                        <td>96.5</td>
+                                        <td>114</td>
+                                    </tr>
+                                    <tr>
+                                        <td>50</td>
+                                        <td>5XL</td>
+                                        <td>116</td>
+                                        <td>103</td>
+                                        <td>119</td>
+                                    </tr>
+                                    <tr>
+                                        <td>52</td>
+                                        <td>6XL</td>
+                                        <td>122</td>
+                                        <td>109.5</td>
+                                        <td>124</td>
+                                    </tr>
+                                    <tr>
+                                        <td>54</td>
+                                        <td>7XL</td>
+                                        <td>128</td>
+                                        <td>116</td>
+                                        <td>130</td>
+                                    </tr>
+                                    <tr>
+                                        <td>56</td>
+                                        <td>8XL</td>
+                                        <td>134</td>
+                                        <td>122.5</td>
+                                        <td>136</td>
+                                    </tr>
+                                    <tr>
+                                        <td>58</td>
+                                        <td>9XL</td>
+                                        <td>140</td>
+                                        <td>129</td>
+                                        <td>142</td>
+                                    </tr>
+                                    <tr>
+                                        <td>60</td>
+                                        <td>10XL</td>
+                                        <td>146</td>
+                                        <td>135.5</td>
+                                        <td>148</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </details>
+                    </section>
                     </section>
                     <section class="other-products">
                         <h2>Lignede produkter</h2>
@@ -230,3 +352,4 @@
         </footer>
 </body>
 </html>
+                    
