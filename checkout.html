@@ -23,9 +23,7 @@
                     <ul>
                         <li>Hjem</li>
                         <li>Produkter</li>
-                        <br>
                         <li><b>Logo</b></li>
-                        <br>
                         <li>Kategorier</li>
                         <li>Kontakt oss</li>
                     </ul>
@@ -38,7 +36,7 @@
                         <i class="fa-regular fa-heart"></i>
                     </li>
                     <li>
-                        <i class="fa-solid fa-cart-shopping"></i>
+                        <a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
                     </li>
                 </ul>
             </header>
@@ -53,7 +51,7 @@
                     <h1 id="kasse">Kasse</h1>
                     <section class="shopping-bag">
                         <h2>Shoppingbaggen din</h2>
-                        <article>
+                        <article class>
                             <img src="https://picsum.photos/id/1/200/300" alt="kassebilde">
                             <ul class="clothing-details">
                                 <li><b>Product name</b></li>
@@ -63,7 +61,7 @@
                             <ul class="shopping-details">
                                 <li>
                                     <label for="size">Størrelse:</label>
-                                    <select name="size" id="size">
+                                    <select name="size" id="clothing-size">
                                         <option value="small">S</option>
                                         <option value="medium">M</option>
                                         <option value="large">L</option>
@@ -71,7 +69,7 @@
                                 </li>
                                 <li>
                                     <label for="numbers">Antall:</label>
-                                    <select name="numbers" id="numbers">
+                                    <select name="numbers" id="number-count">
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
@@ -273,7 +271,7 @@
                             <br>
                             <label for="phone"><b>Telefon</b></label>
                             <br>
-                            <input type="number" id="phone" name="phone" placeholder="+479***018" pattern="[0-9]{8,12}" required>
+                            <input type="tel" id="phone" name="phone" placeholder="+479***018" pattern="[0-9]{8,12}" required>
                             <br>
                             <br>
                             <a href="#" class="btn" id="save-btn">Lagre</a>
@@ -328,7 +326,7 @@
                             <br>
                             <label for="cvc">CVC/CVV</label>
                             <br>
-                            <input type="number" id="cvc" name="cvc" placeholder="CVC/CVV" minlength="100" maxlength="999">
+                            <input type="number" id="cvc" name="cvc" placeholder="CVC/CVV" min="100" max="999">
                         </form>
                     </section>
                     <section class="finalize-payment">
@@ -354,16 +352,23 @@
             <section id="footer2">
                 <article class="contacts">
                     <h4>Kontakt</h4>
-                    <i class="fa-solid fa-location-dot"><p><b>Adresse:<p>B R A Veien 4 1783 Halden</p></b></p></i> 
-                    <i class="fa-solid fa-phone"><p><b>Telefon:<p>69 60 80 00</p></b></p></i>
-                    <i class="fa-solid fa-envelope"><p><b>E-post:<p>halden@hiof.no</p></b></p></i>
-                    <i class="fa-solid fa-clock"><p><b>Åpningstider:<p>Stenger 15:00</p></b></p></i>
+                    <ul>
+                        <li><i class="fa-solid fa-location-dot"><b>Adresse: B R A Veien 4 1783 Halden</b></i>
+                        </li>
+                        <li><i class="fa-solid fa-phone"><b>Telefon: 69 60 80 00</b></i>
+                        </li>
+                        <li><i class="fa-solid fa-envelope"><b>E-post: halden@hiof.no</b></i>
+                        </li>
+                        <li><i class="fa-solid fa-clock"><b>Åpningstider: Stenger 15:00</b></i>
+                        </li>
+                    </ul>
                 </article>
                 <article class="shortcuts">
                     <h4>Snarveier</h4>
                     <p>Produkter</p>
                     <p>Kategorier</p>
                     <p>Om oss</p>
+                    <p><a href="">Tilgjengelighetserklæring</a></p>
                 </article>
             </section>
             <h3>Sosiale medier</h3>
