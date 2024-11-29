@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="nb">
 <head>
-    <!---->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="ikoner/fontawesome-free-6.6.0-web/css/solid.css">
     <link rel="stylesheet" href="ikoner/fontawesome-free-6.6.0-web/css/brands.css">
     <link rel="stylesheet" href="ikoner/fontawesome-free-6.6.0-web/css/fontawesome.css">
     <link rel="stylesheet" href="css/style.css"> 
-    <title>Eksamen</title>
+    <title>Produktside Eksamen</title>
 </head>
 <body>
-    <div id="grid-container">
+    <div id="product-container">
         <header>
             <form>
                 <label>
@@ -21,11 +20,11 @@
             </form>
             <nav>
                 <ul>
-                    <li>Hjem</li>
-                    <li>Produkter</li>
-                    <li><b>Logo</b></li>
-                    <li>Kategorier</li>
-                    <li>Kontakt oss</li>
+                    <li><a href="index.html">Hjem</a></li>
+                    <li><a href="index.html#popular-products">Produkter</a></li>
+                    <li><a href="index.html"><b>Logo</b></a></li>
+                    <li><a href="index.html#popular-categories">Kategorier</a></li>
+                    <li><a href="#contacts">Kontakt oss</a></li>
                 </ul>
             </nav>
             <ul class="icons">
@@ -52,264 +51,80 @@
                 <section class="description">
                     <div id="productcheck-grid">
                         <section class="left-product-gallery">
-                            <img id="img1" src="https://picsum.photos/id/1/200/300" alt="produktbilde1">
-                            <img id="img2" src="https://picsum.photos/id/1/200/300" alt="produktbilde2">
-                            <img id="img3" src="https://picsum.photos/id/1/200/300" alt="produktbilde3">
+                            <img id="img1" src="img/alejandro-escamilla-LNRyGwIJr5c-unsplash.jpg" alt="kassebilde">
+                            <img id="img2" src="img/alejandro-escamilla-LNRyGwIJr5c-unsplash.jpg" alt="kassebilde">
+                            <img id="img3" src="img/alejandro-escamilla-LNRyGwIJr5c-unsplash.jpg" alt="kassebilde">
                         </section>
-                            <img id="img4" src="https://picsum.photos/id/1/200/300" alt="produktbilde4">
+                            <img id="img4" src="img/alejandro-escamilla-LNRyGwIJr5c-unsplash.jpg" alt="kassebilde">
                     </div>
                 </section>
                 <section class="product-description">
                     <ul class="product-details">
-                        <li>Produkt</li>
-                        <li>Merkenavn</li>
+                        <li id="product-name">Produktnavn</li>
+                        <li id="brand-name">Merkenavn</li>
                         <li>5 195 inkl. mva.</li>
                         <li>Farge: <b>Beige</b></li>
                     </ul>
-                    <label for="select-size">Velg størrelse</label>
-                    <select id="select-size" name="select-size">
-                        <option value="XS">XS</option>
-                        <option value="S">S</option>
-                        <option value="M">M</option>
-                        <option value="L">L</option>
-                        <option value="XL">XL</option>
-                    </select>    
-                    <section class="product-buttons">
-                        <ul>
-                            <li><a href="#" class="btn" id="add-to-cart">Add to cart</a></li>
-                            <li><a href="#" class="btn" id="wishlist"><i class="fa-regular fa-heart"></i></a></li>
-                        </ul>
-                        <details class="material">
-                            <summary>Materiale og vedlikehold</summary>
-                            <ul>
-                                <li>Overmateriale: 95% viskoe, 5% estalan</li>
-                                <li>Materiale ermer: 100% polyester</li>
-                                <li>Materiale: Jersey</li>
-                            </ul>
-                        </details>
-                        <details class="detail-collapsible">
-                            <summary>Produktdetaljer</summary>
-                            <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
-                        </details>
-                        <details class="size-table">
-                            <summary>Størrelsestabell</summary>
-                            <p>Sjekk ut hvordan din vanlige størrelse konverterer til andre størrelser i vår størrelsesguide. Husk at dette kun er en generell guide og at størrelsesene kan varierere i forhold til merke og modell.</p>
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>EU</th>
-                                        <th>INT</th>
-                                        <th>BRYSTVIDDE</th>
-                                        <th>LIVVIDDE</th>
-                                        <th>HOFTEMÅL</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>32</td>
-                                        <td>XXS</td>
-                                        <td>76</td>
-                                        <td>63</td>
-                                        <td>85</td>
-                                    </tr>
-                                    <tr>
-                                        <td>34</td>
-                                        <td>XS</td>
-                                        <td>80</td>
-                                        <td>66</td>
-                                        <td>69</td>
-                                    </tr>
-                                    <tr>
-                                        <td>36</td>
-                                        <td>S</td>
-                                        <td>84</td>
-                                        <td>69</td>
-                                        <td>93</td>
-                                    </tr>
-                                    <tr>
-                                        <td>38</td>
-                                        <td>M</td>
-                                        <td>88</td>
-                                        <td>72</td>
-                                        <td>97</td>
-                                    </tr>
-                                    <tr>
-                                        <td>40</td>
-                                        <td>L</td>
-                                        <td>92</td>
-                                        <td>76</td>
-                                        <td>100</td>
-                                    </tr>
-                                    <tr>
-                                        <td>42</td>
-                                        <td>XL</td>
-                                        <td>96</td>
-                                        <td>80</td>
-                                        <td>103</td>
-                                    </tr>
-                                    <tr>
-                                        <td>44</td>
-                                        <td>XXL</td>
-                                        <td>100</td>
-                                        <td>85</td>
-                                        <td>106</td>
-                                    </tr>
-                                    <tr>
-                                        <td>46</td>
-                                        <td>3XL</td>
-                                        <td>105</td>
-                                        <td>90</td>
-                                        <td>109</td>
-                                    </tr>
-                                    <tr>
-                                        <td>48</td>
-                                        <td>4XL</td>
-                                        <td>110</td>
-                                        <td>96.5</td>
-                                        <td>114</td>
-                                    </tr>
-                                    <tr>
-                                        <td>50</td>
-                                        <td>5XL</td>
-                                        <td>116</td>
-                                        <td>103</td>
-                                        <td>119</td>
-                                    </tr>
-                                    <tr>
-                                        <td>52</td>
-                                        <td>6XL</td>
-                                        <td>122</td>
-                                        <td>109.5</td>
-                                        <td>124</td>
-                                    </tr>
-                                    <tr>
-                                        <td>54</td>
-                                        <td>7XL</td>
-                                        <td>128</td>
-                                        <td>116</td>
-                                        <td>130</td>
-                                    </tr>
-                                    <tr>
-                                        <td>56</td>
-                                        <td>8XL</td>
-                                        <td>134</td>
-                                        <td>122.5</td>
-                                        <td>136</td>
-                                    </tr>
-                                    <tr>
-                                        <td>58</td>
-                                        <td>9XL</td>
-                                        <td>140</td>
-                                        <td>129</td>
-                                        <td>142</td>
-                                    </tr>
-                                    <tr>
-                                        <td>60</td>
-                                        <td>10XL</td>
-                                        <td>146</td>
-                                        <td>135.5</td>
-                                        <td>148</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </details>
-                    </section>
                 </section>
                 <section class="other-products">
-                        <h2>Lignede produkter</h2>
-                        <p>Se flere lignende produkter -></p>
-                        <div class="scroll-products">
+                    <h2>Lignede produkter</h2>
+                    <p>Se flere lignende produkter -></p>
+                        <section class="column-products">
                             <article>
-                                <a href="#">
-                                    <img src="https://picsum.photos/id/1/200/300" alt="scroll-productpicture">
+                                <a href="product.html">
+                                    <img src="img/alejandro-escamilla-LNRyGwIJr5c-unsplash.jpg" alt="kassebilde">
+                                </a>
                                     <p>
                                         <span><b>Product name</b></span>
                                         <span>Kr 1999</span>
                                     </p>
-                                    <span class="fa-solid fa-star"></span>
-                                    <span class="fa-solid fa-star"></span>
-                                    <span class="fa-solid fa-star"></span>
-                                    <span class="fa-solid fa-star"></span>
-                                    <span class="fa-regular fa-star"></span>
-                                    <span><b>842 Reviews</b></span>
-                                </a>
                             </article>
                             <article>
-                                <a href="#">
-                                    <img src="https://picsum.photos/id/1/200/300" alt="scroll-productpicture">
+                                <a href="product.html">
+                                    <img src="img/alejandro-escamilla-LNRyGwIJr5c-unsplash.jpg" alt="kassebilde">
+                                </a>
                                     <p>
                                         <span><b>Product name</b></span>
                                         <span>Kr 1999</span>
                                     </p>
-                                    <span class="fa-solid fa-star"></span>
-                                    <span class="fa-solid fa-star"></span>
-                                    <span class="fa-solid fa-star"></span>
-                                    <span class="fa-solid fa-star"></span>
-                                    <span class="fa-regular fa-star"></span>
-                                    <span><b>842 Reviews</b></span>
-                                </a>
                             </article>
                             <article>
-                                <a href="#">
-                                    <img src="https://picsum.photos/id/1/200/300" alt="scroll-productpicture">
+                                <a href="product.html">
+                                    <img src="img/alejandro-escamilla-LNRyGwIJr5c-unsplash.jpg" alt="kassebilde">
+                                </a>
                                     <p>
                                         <span><b>Product name</b></span>
                                         <span>Kr 1999</span>
                                     </p>
-                                    <span class="fa-solid fa-star"></span>
-                                    <span class="fa-solid fa-star"></span>
-                                    <span class="fa-solid fa-star"></span>
-                                    <span class="fa-solid fa-star"></span>
-                                    <span class="fa-regular fa-star"></span>
-                                    <span><b>842 Reviews</b></span>
-                                </a>
                             </article>
                             <article>
-                                <a href="#">
-                                    <img src="https://picsum.photos/id/1/200/300" alt="scroll-productpicture">
+                                <a href="product.html">
+                                    <img src="img/alejandro-escamilla-LNRyGwIJr5c-unsplash.jpg" alt="kassebilde">
+                                </a>
                                     <p>
                                         <span><b>Product name</b></span>
                                         <span>Kr 1999</span>
                                     </p>
-                                    <span class="fa-solid fa-star"></span>
-                                    <span class="fa-solid fa-star"></span>
-                                    <span class="fa-solid fa-star"></span>
-                                    <span class="fa-solid fa-star"></span>
-                                    <span class="fa-regular fa-star"></span>
-                                    <span><b>842 Reviews</b></span>
-                                </a>
                             </article>
                             <article>
-                                <a href="#">
-                                    <img src="https://picsum.photos/id/1/200/300" alt="scroll-productpicture">
+                                <a href="product.html">
+                                    <img src="img/alejandro-escamilla-LNRyGwIJr5c-unsplash.jpg" alt="kassebilde">
+                                </a>
                                     <p>
                                         <span><b>Product name</b></span>
                                         <span>Kr 1999</span>
                                     </p>
-                                    <span class="fa-solid fa-star"></span>
-                                    <span class="fa-solid fa-star"></span>
-                                    <span class="fa-solid fa-star"></span>
-                                    <span class="fa-solid fa-star"></span>
-                                    <span class="fa-regular fa-star"></span>
-                                    <span><b>842 Reviews</b></span>
-                                </a>
                             </article>
                             <article>
-                                <a href="#">
-                                    <img src="https://picsum.photos/id/1/200/300" alt="scroll-productpicture">
+                                <a href="product.html">
+                                    <img src="img/alejandro-escamilla-LNRyGwIJr5c-unsplash.jpg" alt="kassebilde">
+                                </a>
                                     <p>
                                         <span><b>Product name</b></span>
                                         <span>Kr 1999</span>
                                     </p>
-                                    <span class="fa-solid fa-star"></span>
-                                    <span class="fa-solid fa-star"></span>
-                                    <span class="fa-solid fa-star"></span>
-                                    <span class="fa-solid fa-star"></span>
-                                    <span class="fa-regular fa-star"></span>
-                                    <span><b>842 Reviews</b></span>
-                                </a>
                             </article>
-                        </div>    
+                        </section>    
                 </section>
             </div>                           
         </main>
@@ -317,25 +132,27 @@
             <h3>Logo</h3>
             <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
             <section id="footer2">
-                <article class="contacts">
+                <article id="contacts">
                     <h4>Kontakt</h4>
                     <ul>
-                        <li><i class="fa-solid fa-location-dot">Adresse: <b>B R A Veien 4 1783 Halden</b></i>
+                        <li><i class="fa-solid fa-location-dot"></i> Adresse: <b>B R A Veien 4 1783 Halden</b>
                         </li>
-                        <li><i class="fa-solid fa-phone">Telefon:<b>69 60 80 00</b></i>
+                        <li><i class="fa-solid fa-phone"></i> Telefon:<b>69 60 80 00</b>
                         </li>
-                        <li><i class="fa-solid fa-envelope">E-post: <b>halden@hiof.no</b></i>
+                        <li><i class="fa-solid fa-envelope"></i> E-post: <b>halden@hiof.no</b>
                         </li>
-                        <li><i class="fa-solid fa-clock">Åpningstider: <b>Stenger 15:00</b></i>
+                        <li><i class="fa-solid fa-clock"></i> Åpningstider: <b>Stenger 15:00</b>
                         </li>
                     </ul>
                 </article>
                 <article class="shortcuts">
                     <h4>Snarveier</h4>
-                    <p>Produkter</p>
-                    <p>Kategorier</p>
-                    <p>Om oss</p>
-                    <p><a href="">Tilgjengelighetserklæring</a></p>
+                    <ul>
+                        <li>Produkter</li>
+                        <li>Kategorier</li>
+                        <li>Om oss</li>
+                        <li><a href="">Tilgjengelighetserklæring</a></li>
+                    </ul>
                 </article>
             </section>
             <h3>Sosiale medier</h3>

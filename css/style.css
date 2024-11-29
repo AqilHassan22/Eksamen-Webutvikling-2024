@@ -1,5 +1,4 @@
-*{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+* {
     box-sizing: border-box;
 }
 
@@ -36,6 +35,14 @@ header main footer{
     flex-direction: column;
 }
 
+#product-container header{
+    grid-column: 1/2;
+    grid-row: 1/4;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
 #search{
     display: inline-block;
     border-radius: 61px;
@@ -51,12 +58,43 @@ header main footer{
     align-items: center;
 }
 
+#grid-container header nav ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+
+#product-container header nav ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem 0;
+    align-items: center;
+}
+
+#product-container header nav ul li a{
+    color: black;
+    text-decoration: none;
+}
+
 .icons{
     display: flex;
     flex-direction: row;
     list-style: none;
     gap: 0.7rem;
     margin-top: -0.5rem;
+    color: black;
+    text-decoration: none;
+}
+
+.product-name{
+    text-transform: uppercase;
+}
+
+.fa-solid.fa-cart-shopping{
+    color: black;
 }
 
 #grid-container main{
@@ -76,55 +114,13 @@ main{
     align-items: center;
 }
 
-.scroll-banner{
-    width: 100%;
-    background-size: cover;
-    padding: 0;
-    border-radius: 25px;
-    margin-top: 220px;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.scroll-banner figure{
-    scroll-snap-align: center;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    text-align: center;
-}
-
-#caption1 a, #caption3 a{
+#caption1 a{
     display: inline-block;
     background-color: white;
     color: black;
     padding: 1rem;
     text-decoration: none;
     border-radius: 25px;
-}
-
-#caption2 a {
-    display: inline-block;
-    background-color: black;
-    color: white;
-    padding: 1rem;
-    text-decoration: none;
-    border-radius: 25px;
-}
-
-.scroll-banner img{
-    width: 400px;
-    height: 800px;
-    max-height: 100%;
-    max-width: 100%;
-    object-fit: cover;
-    border-radius: 25px 25px 25px 25px;
 }
 
 #caption1{
@@ -155,27 +151,40 @@ main{
 .buttons{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     gap: 1rem 0;
     padding: 0;
     list-style: none;
 }
 
-.product-card{
+.buttons ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.buttons ul li a{
+    color: black;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 1rem;
+    border: 1px solid;
+}
+
+#product-card{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
     margin-top: 39px;
-    gap: 6rem;
+    gap: 1.5rem;
 }
 
-.product-card article{
+#product-card article{
     min-width: 100px;
     flex-grow: 1;
 }
 
-.product-card article img{
+#product-card article img{
     width: 400px;
     border-radius: 25px;
     height: 400px;
@@ -183,77 +192,48 @@ main{
     max-height: 100%;
 }
 
-.product-card article p{
+#product-card article p{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.scroll-products{
+.column-products{
     display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    overflow: scroll;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
-.scroll-products article{
+.column-products article{
     min-width: 250px;
 }
 
-.scroll-products article img{
-    border-radius: 25px;
+.column-products article p{
+    display: flex;
+    justify-content: space-between;
 }
 
-.fa-regular.fa-star{
-    color: white;
+.column-products article img{
+    border-radius: 25px;
+    width: 100%;
+    height: 500px;
 }
 
 h2{
     flex-basis: 100%;
 }
 
-.popular-products{
+#popular-products{
     text-align: center;
-    margin-top: 250px;
 }
 
-#product-buttons.btn{
-    display: inline-block;
-    color: black;
-    background-color: white;
-    border: black 1px solid;
-    border-radius: 30px;
-    text-align: center;
-    padding: 1rem;
-    text-decoration: none;
-}
-
-.material summary, .detail-collapsible summary, .size-table summary{
-    list-style: none;
-    border-top: 2px solid black;
-    padding: 1rem;
-}
-
-.material summary::before, .detail-collapsible summary::before, .size-table summary::before{
-    content: '\02795';
-    font-size: 13px;
-    color: black;
-    float: right;
-    margin-left: 5px;
-}
-
-.material summary::after, .detail-collapsible summary::after, .size-table summary::after{
-    content: "\2796";
-}
-
-.popular-categories{
+#popular-categories{
     margin-top: 20px;
     text-align: center;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(8, auto);
     color: black;
-    gap: 1rem;
 }
 
 .cat1, .cat2, .cat3, .cat4, .cat5{
@@ -335,8 +315,9 @@ h2{
     flex-direction: row;
     flex-wrap: wrap;
     gap: 1rem;
-    margin-top: 1200px;
+    margin-top: 20px;
     width: 400px;
+    margin-left: -180px;
 }
 
 .reviews h4{
@@ -344,23 +325,22 @@ h2{
 }
 
 .review-card{
-    max-width: 289px;
     width: 100%;
-    box-shadow: 13px 9px 20px 0px #efefef;
-    border-radius: 4px;
-    padding: 1rem;
+    padding: 20px;
+    border: 1px solid #ccc;
+    height: 100%;
 }
 
 .review-card img{
     border-radius: 100%;
-    height: 75px;
-    width: 75px;
+    height: 150px;
+    max-width: 150px;
 }
 
-.scroll-container{
+.review-container{
     display: flex;
     gap: 1rem;
-    overflow: scroll;
+    flex-direction: column;
 }
 
 #grid-container footer{
@@ -371,6 +351,18 @@ h2{
     border-top: 1px black solid;
     margin: 0 auto;
     padding: 0;
+    width: 97%;
+}
+
+#product-container footer{
+    grid-column: 1/2;
+    grid-row: 4/5;
+    background-color: white;
+    color: black;
+    border-top: 1px black solid;
+    margin: 0 auto;
+    padding: 0;
+    width: 97%;
 }
 
 #footer2{
@@ -380,12 +372,32 @@ h2{
     align-items: flex-start;
 }
 
-.contacts ul{
+#contacts ul{
     display: flex;
     flex-direction: column;
     list-style: none;
     gap: 1.3rem;
     margin-left: -40px;
+}
+
+#contacts ul li{
+    padding: 1rem 0;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.shortcuts ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 1.3rem;
+    margin-left: -40px;
+}
+
+.shortcuts ul li{
+    padding: 1rem 0;
+    display: flex;
+    gap: 0.5rem;
 }
 
 .fa-solid.fa-location-dot, .fa-solid.fa-phone, .fa-solid.fa-envelope, .fa-solid.fa-clock {
@@ -418,16 +430,24 @@ nav#breadcrumbs-check a{
     margin-top: 80px;
 }
 
+#product-container{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 #product-grid{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, auto);
 }
 
-.breadcrumbs-product{
-    grid-column: 1/2;
-    grid-row: 1/2;
+#breadcrumbs-product{
+    margin-left: -40px;
 }
+
 
 .description{
     grid-column: 1/2;
@@ -457,7 +477,9 @@ nav#breadcrumbs-check a{
 .breadcrumb-bar{
     display: flex;
     list-style: none;
-    gap: 1rem;
+    gap: 0.5rem;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 #productcheck-grid{
@@ -491,14 +513,11 @@ nav#breadcrumbs-check a{
     object-fit: cover;
 }
 
-.gallery-group{
-    list-style: none;
-}
-
 .product-details{
     display: flex;
     flex-direction: column;
     list-style: none;
+    margin-left: -40px;
 }
 
 .product-buttons ul{
@@ -506,6 +525,7 @@ nav#breadcrumbs-check a{
     flex-direction: row;
     list-style: none;
     gap: 0.5rem;
+    margin-left: -40px;
 }
 
 
@@ -587,6 +607,20 @@ a#submit-payment.btn{
     grid-row: 3/4;
 }
 
+.shopping-bag article{
+    width: 100%;
+}
+
+.shopping-bag a ul li{
+    color: black;
+    text-decoration: none;
+}
+
+.shopping-bag a ul li b{
+    color: black;
+    text-decoration: none;
+}
+
 .shopping-bag img{
     width: 190px;
     height: 40vh;
@@ -620,14 +654,6 @@ a#submit-payment.btn{
     display: flex;
     flex-direction: column;
     list-style: none;
-    margin-left: -30px;
-}
-
-.shopping-details{
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    gap: 0.5rem;
     margin-left: -30px;
 }
 
